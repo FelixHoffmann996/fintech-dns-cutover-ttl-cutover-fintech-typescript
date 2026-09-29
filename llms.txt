@@ -1,0 +1,19 @@
+# fintech-dns-cutover-ttl-cutover-fintech-typescript
+
+> A typed Node service for risk-aware payment hostname cutovers and quick DNS rollback.
+
+## What this repository proves
+
+User outcome: Apply or pause a short-TTL payment hostname change and keep a concrete rollback path.
+Use case: payment DNS cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.record.upsert`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `test/cutover_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

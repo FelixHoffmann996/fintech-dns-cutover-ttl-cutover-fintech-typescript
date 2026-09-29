@@ -1,0 +1,19 @@
+{
+  "changeId": "chg_20260927_001",
+  "domain": "payments.example.com",
+  "recordName": "api",
+  "currentAddress": "192.0.2.10",
+  "targetAddress": "198.51.100.20",
+  "ttl": 60,
+  "action": "cutover",
+  "approvedBy": "operator@example.com",
+  "paymentEvents": [
+    {
+      "eventId": "evt_101",
+      "kind": "authorization",
+      "amountMinor": 1299,
+      "currency": "USD",
+      "riskScore": 24
+    }
+  ]
+}
